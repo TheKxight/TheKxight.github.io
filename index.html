@@ -1,1 +1,114 @@
 <a href="game1/">Play Game</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G.GUI – Gamers GUI</title>
+
+<style>
+:root {
+    --bg: #0b0e14;
+    --card: #151a25;
+    --accent: #00e0ff;
+    --text: #e6e6e6;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #121826, var(--bg));
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px 30px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text);
+    width: 220px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: var(--accent);
+    box-shadow: 0 15px 35px rgba(0,224,255,0.15);
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+
+<h1>G.GUI</h1>
+<div class="subtitle">Gamers GUI</div>
+
+<div class="menu">
+    <a class="card" href="game1/">
+        <h2>🎮 Game 1</h2>
+        <p>First playable demo</p>
+    </a>
+
+    <a class="card" href="game2/">
+        <h2>🕹 Game 2</h2>
+        <p>Coming soon</p>
+    </a>
+
+    <a class="card" href="#">
+        <h2>📱 Apps</h2>
+        <p>Tools & utilities</p>
+    </a>
+</div>
+
+<footer>
+    G.GUI Project • Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>
